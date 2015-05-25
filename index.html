@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Upload tree to FITS</title>
+</head>
+<body>
+<form action="fits-uploader.php" method="post" enctype="multipart/form-data" id="uploadForm">
+	<p>
+		<label for="uploader">Uploader:</label>
+		<input type="text" name="uploader" id="uploader">
+	</p>	
+	<p>
+		<label for="treeTitle">Tree Name:</label>
+		<input type="text" name="treeTitle" id="treeTitle">
+	</p>
+	<p>
+		<label for="version">Version no:</label>
+		<input type="text" name="version" id="version">
+	</p>
+	<p>
+		Browse for tree: 
+		<input type="file" value="treepath" name="treePath" id="treePath">
+	</p>
+	<p>
+		Browse for icon: 
+		<input type="file" value="iconToUpload" name="iconToUpload" id="iconToUpload">
+	</p>
+
+	<p>
+		<label for="youtubeLink">YouTube video:</label>
+		<input type="text" name="youtubelink" id="youtubeLink">
+	</p>
+	Enter description below:
+	<p>
+		<textarea rows="4" cols="50" name="description" form="uploadForm"></textarea>
+	</p>
+	<p>
+		<input type="submit">
+	</p>
+</form>
+
+
+</body>
+</html>
